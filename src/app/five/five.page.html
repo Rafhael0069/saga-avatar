@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button class="button-toolbar" fill="outline" [routerLink]="['/home']">home</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="content">
+      <div class="title-image">
+        <h1 class="custom-title">Avatar: The Quest for Eywa</h1>
+        <img src="../../assets/imgs/poster avatar 5.png" alt="">
+      </div>
+      <div class="details">
+        <div class="diretor-imdb">
+          <p>Diretor: <span>James Cameron</span></p>
+          <p>Imdb: <span>s/n</span></p>
+        </div>
+        <div class="genero-ano">
+          <p id="genero">genero: <span>Ação, Aventura, Fantasia, Ficção científica</span></p>
+          <p>Ano: <span>2028</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="button-bottom">
+      <ion-button fill="outline" [routerLink]="['/one']">1</ion-button>
+      <ion-button fill="outline" [routerLink]="['/two']">2</ion-button>
+      <ion-button fill="outline" [routerLink]="['/three']">3</ion-button>
+      <ion-button fill="outline" [routerLink]="['/four']">4</ion-button>
+      <ion-button fill="outline" [routerLink]="['/five']" [disabled]="true">5</ion-button>
+    </div>
+  </div>
+</ion-content>

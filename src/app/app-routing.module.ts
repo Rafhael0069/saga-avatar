@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'one',
+    loadChildren: () => import('./one/one.module').then( m => m.OnePageModule)
+  },
+  {
+    path: 'two',
+    loadChildren: () => import('./two/two.module').then( m => m.TwoPageModule)
+  },
+  {
+    path: 'three',
+    loadChildren: () => import('./three/three.module').then( m => m.ThreePageModule)
+  },
+  {
+    path: 'four',
+    loadChildren: () => import('./four/four.module').then( m => m.FourPageModule)
+  },
+  {
+    path: 'five',
+    loadChildren: () => import('./five/five.module').then( m => m.FivePageModule)
+  },
 ];
 
 @NgModule({
