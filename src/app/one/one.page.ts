@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./one.page.scss'],
 })
 export class OnePage implements OnInit {
+  constructor() {}
 
-  constructor() {
-  }
+  ngOnInit() {}
 
-  ngOnInit() {
-    //console.log('localStorage '+localStorage.getItem('name')); // getting
+  ionViewDidEnter() {
+    console.log('localStorage ' + localStorage.getItem('name')); // getting
     const titleAux = localStorage.getItem('name');
-    console.log('titleaux '+ titleAux);
-    document.getElementById('title').textContent = titleAux;
+    //console.log('titleaux '+ titleAux);
+    //document.getElementById('title').textContent = titleAux;
+    document.getElementById('title').textContent = localStorage.getItem('name');
   }
-
 }

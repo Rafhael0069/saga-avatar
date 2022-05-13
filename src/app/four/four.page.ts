@@ -6,14 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./four.page.scss'],
 })
 export class FourPage implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-     //console.log('localStorage '+localStorage.getItem('name')); // getting
-     const titleAux = localStorage.getItem('name');
-     console.log('titleaux '+ titleAux);
-     document.getElementById('title').textContent = titleAux;
+  ionViewDidEnter() {
+    console.log('localStorage ' + localStorage.getItem('name')); // getting
+    const titleAux = localStorage.getItem('name');
+    //console.log('titleaux '+ titleAux);
+    //document.getElementById('title').textContent = titleAux;
+    document.getElementById('title').textContent = localStorage.getItem('name');
   }
-
 }
