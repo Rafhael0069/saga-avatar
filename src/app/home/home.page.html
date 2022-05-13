@@ -4,7 +4,16 @@
       <h1 class="custom-title">Bem vindo a saga Avatar!</h1>
     </div>
     <div>
-      <ion-button expand="block" fill="outline" [routerLink]="['/one']">Iniciar</ion-button>
+      <form class="content-form" [formGroup]="startForm" (ngSubmit)="submitLogin()">
+        <ion-list>
+          <ion-item>
+            <ion-input type="name" placeholder="Nome" formControlName="name" [(ngModel)]="name"></ion-input>
+          </ion-item>
+        </ion-list>
+        <div>
+          <ion-button expand="block" fill="outline" type="submit" [disabled]="startForm.invalid">Iniciar</ion-button>
+        </div>
+      </form>
     </div>
   </div>
 </ion-content>

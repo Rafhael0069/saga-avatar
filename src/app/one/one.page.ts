@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OnePage implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    //console.log('localStorage '+localStorage.getItem('name')); // getting
+    const titleAux = localStorage.getItem('name');
+    console.log('titleaux '+ titleAux);
+    document.getElementById('title').textContent = titleAux;
   }
 
 }
