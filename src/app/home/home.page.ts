@@ -20,6 +20,5 @@ export class HomePage {
   submitLogin() {
     localStorage.setItem('name', this.name); // setting
     this.navCtrl.navigateForward('one');
-   // console.log(localStorage.getItem('name')); // getting
   }
 }

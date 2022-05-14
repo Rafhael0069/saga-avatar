@@ -11,10 +11,6 @@ export class FourPage implements OnInit {
   ngOnInit() {}
 
   ionViewDidEnter() {
-    console.log('localStorage ' + localStorage.getItem('name')); // getting
-    const titleAux = localStorage.getItem('name');
-    //console.log('titleaux '+ titleAux);
-    //document.getElementById('title').textContent = titleAux;
-    document.getElementById('title').textContent = localStorage.getItem('name');
+    document.getElementById('title4').textContent = localStorage.getItem('name');
   }
 }
