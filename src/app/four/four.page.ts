@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Poster } from '../models/poster';
 
 @Component({
   selector: 'app-four',
@@ -6,7 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./four.page.scss'],
 })
 export class FourPage implements OnInit {
-  constructor() {}
+  poster: Poster;
+
+  constructor() {
+    this.poster = new Poster(
+      'Avatar: The Tulkun Rider',
+      '../../assets/imgs/poster avatar 4.png',
+      'James Cameron',
+      's/n',
+      'Ação, Aventura, Fantasia,  Ficção científica, Suspense',
+      '2026',
+      false,
+      false,
+      false,
+      true,
+      false
+    );
+  }
 
   ngOnInit() {}
 

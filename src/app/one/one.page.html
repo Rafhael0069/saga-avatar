@@ -11,26 +11,26 @@
   <div class="container">
     <div class="content">
       <div class="title-image">
-        <h1 class="custom-title">Avatar</h1>
-        <img src="../../assets/imgs/poster avatar.jpg" alt="">
+        <h1 class="custom-title">{{ poster.titulo }}</h1>
+        <img src="{{ poster.imgPosterUrl }}" alt="">
       </div>
       <div class="details">
         <div class="diretor-imdb">
-          <p>Diretor: <span>James Cameron</span></p>
-          <p>Imdb: <span>7.8 / 10</span></p>
+          <p>Diretor: <span>{{ poster.diretor }}</span></p>
+          <p>Imdb: <span>{{ poster.imdb }}</span></p>
         </div>
         <div class="genero-ano">
-          <p id="genero">genero: <span>Épico, Ação, Aventura, Ficção científica</span></p>
-          <p>Ano: <span>2009</span></p>
+          <p id="genero">genero: <span>{{ poster.genero }}</span></p>
+          <p>Ano: <span>{{ poster.ano }}</span></p>
         </div>
       </div>
     </div>
     <div class="button-bottom">
-      <ion-button fill="outline" [routerLink]="['/one']" [disabled]="true">1</ion-button>
-      <ion-button fill="outline" [routerLink]="['/two']">2</ion-button>
-      <ion-button fill="outline" [routerLink]="['/three']">3</ion-button>
-      <ion-button fill="outline" [routerLink]="['/four']">4</ion-button>
-      <ion-button fill="outline" [routerLink]="['/five']">5</ion-button>
+      <ion-button fill="outline" [routerLink]="['/one']" disabled="{{ poster.buttonDisable1 }}">1</ion-button>
+      <ion-button fill="outline" [routerLink]="['/two']" disabled="{{ poster.buttonDisable2 }}">2</ion-button>
+      <ion-button fill="outline" [routerLink]="['/three']" disabled="{{ poster.buttonDisable3 }}">3</ion-button>
+      <ion-button fill="outline" [routerLink]="['/four']" disabled="{{ poster.buttonDisable4 }}">4</ion-button>
+      <ion-button fill="outline" [routerLink]="['/five']" disabled="{{ poster.buttonDisable5 }}">5</ion-button>
     </div>
   </div>
 </ion-content>

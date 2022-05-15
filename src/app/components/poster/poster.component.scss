@@ -1,0 +1,59 @@
+.color-blue {
+  color: #3880ff;
+}
+
+h1, p{
+  color: #3880ff;
+}
+
+.container {
+  width: 100vw;
+  height: 90vh;
+}
+
+.content{
+    width: 100vw;
+    height: 88vh;
+}
+
+.title-image{
+  height: 82%;
+}
+
+.custom-title {
+  margin-top: 0;
+}
+
+.details{
+  margin: 0;
+  padding: 0;
+  height: 18%;
+}
+
+.diretor-imdb{
+  display: flex;
+  justify-content:space-around;
+}
+
+.genero-ano{
+  display: flex;
+  justify-content:space-around;
+}
+
+#genero{
+  width: 60vw;
+}
+
+span{
+  color: #005eff;
+  font-style: italic;
+}
+
+.button-bottom {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+}
