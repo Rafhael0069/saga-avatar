@@ -1,1 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="color-blue"  id="title1"></ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="color-blue" fill="outline" [routerLink]="['/home']">home</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
+<ion-content>
+  <div class="container">
+    <app-poster></app-poster>
+     <div class="content">
+      <div class="title-image">
+        <h1 class="custom-title">{{ poster.titulo }}</h1>
+        <img src="{{ poster.imgPosterUrl }}" alt="">
+      </div>
+      <div class="details">
+        <div class="diretor-imdb">
+          <p>Diretor: <span>{{ poster.diretor }}</span></p>
+          <p>Imdb: <span>{{ poster.imdb }}</span></p>
+        </div>
+        <div class="genero-ano">
+          <p id="genero">genero: <span>{{ poster.genero }}</span></p>
+          <p>Ano: <span>{{ poster.ano }}</span></p>
+        </div>
+      </div>
+    </div> 
+    <div class="button-bottom">
+      <ion-button fill="outline" [routerLink]="['/one']" disabled="{{ poster.buttonDisable1 }}">1</ion-button>
+      <ion-button fill="outline" [routerLink]="['/two']" disabled="{{ poster.buttonDisable2 }}">2</ion-button>
+      <ion-button fill="outline" [routerLink]="['/three']" disabled="{{ poster.buttonDisable3 }}">3</ion-button>
+      <ion-button fill="outline" [routerLink]="['/four']" disabled="{{ poster.buttonDisable4 }}">4</ion-button>
+      <ion-button fill="outline" [routerLink]="['/five']" disabled="{{ poster.buttonDisable5 }}">5</ion-button>
+    </div>
+  </div>
+</ion-content>

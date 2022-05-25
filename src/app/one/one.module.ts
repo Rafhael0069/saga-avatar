@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { OnePageRoutingModule } from './one-routing.module';
 
 import { OnePage } from './one.page';
+import { PosterComponent } from '../components/poster/poster.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OnePageRoutingModule
+    OnePageRoutingModule,
+    PosterComponent
   ],
-  declarations: [OnePage]
+  declarations: [OnePage, PosterComponent]
 })
 export class OnePageModule {}
