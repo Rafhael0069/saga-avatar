@@ -14,9 +14,8 @@ import { PosterComponent } from '../components/poster/poster.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    OnePageRoutingModule,
-    PosterComponent
+    OnePageRoutingModule
   ],
-  declarations: [OnePage, PosterComponent]
+  declarations: [OnePage]
 })
 export class OnePageModule {}
